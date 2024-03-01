@@ -1,0 +1,176 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/Barbecue.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Cat.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/Swing.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/Slide.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/TableWithUmbrella.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/Gnome.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/trees/protos/PalmTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/boston_dynamics/spot/protos/Spot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/irobot/create/protos/Create.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Grass.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/garden/protos/SwingCouch.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.14947961675806004 0.19176573492490423 -0.9699905912340464 1.3538534162473863
+  position -2.8096499864341005 17.127387428538956 6.716795800303069
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Pedestrian {
+  translation 1.89 -2.61 1.27
+  rotation 0 0 1 -1.5707953071795862
+}
+Cat {
+  translation 3.13367 -2.28813 0
+  rotation 0 0 1 -2.094395307179586
+}
+Pedestrian {
+  translation 0.87 -3.54 1.27
+  name "pedestrian(1)"
+}
+Barbecue {
+  translation 1.88 -3.75 0
+  rotation 0 0 1 1.5708
+}
+Pedestrian {
+  translation 3.13 -3.64 1.27
+  rotation 0 0 1 3.14159
+  name "pedestrian(2)"
+}
+RectangleArena {
+  translation 0 0.87 0
+  floorSize 10 10
+  floorAppearance Grass {
+  }
+}
+Slide {
+  translation -4.4 0 0
+}
+TableWithUmbrella {
+  translation -3.83 -3.35 0
+}
+Gnome {
+  translation -3.4 -3.13 0.92
+}
+Swing {
+  translation 2.87 5.01 0
+  rotation 0 0 1 -1.5707953071795862
+  name "swing(1)"
+}
+Cat {
+  translation 0.857774 -2.30489 0
+  rotation 0 0 1 -1.047195307179586
+  name "cat(1)"
+}
+Swing {
+  translation -2.86 5.01 0
+  rotation 0 0 1 -1.5707953071795862
+}
+PalmTree {
+  translation 4.55 -3.7 -2.13519e-05
+  rotation 0 1 0 4.692820414042842e-06
+}
+Spot {
+  hidden position_0_0 -0.12706914124786886
+  hidden position_0_1 0.12708113282688746
+  hidden position_0_2 -0.18135875240710414
+  hidden position_0_3 0.18126793182646272
+  hidden linearVelocity_0 -0.02863793119604504 0.013800600422761336 -0.044190358101914365
+  hidden angularVelocity_0 0.027666256241614666 -0.1401163529252131 -0.01766005257785917
+  hidden translation_18 -0.0528 0.0006 0
+  hidden rotation_18 0 0 -1 0.1270691412478696
+  hidden position_18_0 -0.108370899153159
+  hidden linearVelocity_18 -0.03239458365490386 0.006943213761686808 0.004039139923911035
+  hidden angularVelocity_18 0.05194921284210504 -0.13536284904511536 -0.014091530159627693
+  hidden translation_19 0 -0.00053 0
+  hidden rotation_19 -1 0 0 0.1083708991531606
+  hidden position_19_1 -0.05146465094190744
+  hidden linearVelocity_19 -0.027798664950103736 0.010578797229558743 0.0037112175967215395
+  hidden angularVelocity_19 0.03110113311524761 -0.038366422612504766 -0.0015656572056033822
+  hidden translation_21 -0.1122 -0.319729 0.182338
+  hidden rotation_21 -0.9999999999999999 0 0 0.05146465094190656
+  hidden linearVelocity_21 -0.02132386713747775 0.020185049506684205 0.00012669515564502526
+  hidden angularVelocity_21 0.021199515003747636 0.00770855076281694 0.004380488292637324
+  hidden translation_22 0.0528 0.0006 0
+  hidden rotation_22 0 0 1 0.12708113282688804
+  hidden position_22_0 -0.10835750529438049
+  hidden linearVelocity_22 -0.03399826901320819 0.006647160010157898 0.004094653970896312
+  hidden angularVelocity_22 0.003385119887375038 -0.14486781264533535 -0.021229662762382327
+  hidden translation_23 0 -0.00053 0
+  hidden rotation_23 -0.9999999999999999 0 0 0.10835750529437845
+  hidden position_23_1 -0.05145838300809591
+  hidden linearVelocity_23 -0.03371008504195478 0.006929491547102564 0.003642335084833281
+  hidden angularVelocity_23 -0.01391890896868728 -0.047167136683351894 -0.03371664758296118
+  hidden translation_25 0.1122 -0.319729 0.182338
+  hidden rotation_25 -0.9999999999999999 0 0 0.051458383008097214
+  hidden linearVelocity_25 -0.02527710704955571 -0.0005595134480439253 3.9591998320385975e-05
+  hidden angularVelocity_25 -0.022139767800446252 -0.0007571153367470239 -0.039643138012336224
+  hidden translation_26 -0.0528 0.0006 0
+  hidden rotation_26 0 0 -1 0.1813587524071045
+  hidden position_26_0 -0.2439314187031233
+  hidden linearVelocity_26 -0.021188538765436905 0.02098320979905664 -0.09097108119698773
+  hidden angularVelocity_26 0.0993886001828795 -0.1260724657188629 -0.00717565255676113
+  hidden translation_27 0 -0.00053 0
+  hidden rotation_27 -1 0 0 0.243931418703123
+  hidden position_27_1 0.3197871489963108
+  hidden linearVelocity_27 -0.03291665078841132 0.021715554817859983 -0.07409597868430758
+  hidden angularVelocity_27 0.05114343936291754 0.09003773617264765 0.032707306749581715
+  hidden translation_29 -0.1122 -0.319729 0.182338
+  hidden rotation_29 1 0 0 0.31978714899631117
+  hidden linearVelocity_29 -0.02951657085923547 0.03564183019441062 -0.03051373282606894
+  hidden angularVelocity_29 0.11430770472060772 -0.19334044876447096 -0.019622442009264406
+  hidden translation_30 0.0528 0.0006 0
+  hidden rotation_30 0 0 0.9999999999999999 0.18126793182646356
+  hidden position_30_0 -0.24391402680133945
+  hidden linearVelocity_30 -0.022838909764359802 0.020880586614645445 -0.09084069821585551
+  hidden angularVelocity_30 -0.045178845921207376 -0.15440072016448964 -0.028350942036785308
+  hidden translation_31 0 -0.00053 0
+  hidden rotation_31 -1 0 0 0.243914026801339
+  hidden position_31_1 0.31979618555296047
+  hidden linearVelocity_31 -0.03895336888848666 0.018235061911175913 -0.07402175877770666
+  hidden angularVelocity_31 -0.08209162289644095 0.0639394583202093 -0.06818282417788422
+  hidden translation_33 0.1122 -0.319729 0.182338
+  hidden rotation_33 1 0 0 0.3197961855529603
+  hidden linearVelocity_33 -0.03198357632568746 0.0051154601915250255 -0.030409671272673935
+  hidden angularVelocity_33 -0.03361280482992389 -0.22233201658195795 -0.015931513776383115
+  translation -0.9292937831381022 -2.8006069474131516 0.5477823083780385
+  rotation 0.05879173401999781 -0.5997381090409087 0.7980336663167519 0.2416885599883484
+}
+Create {
+  hidden position_0_0 1105.2249738110202
+  hidden position_0_1 1134.2405467398157
+  hidden linearVelocity_0 0.24204575876549053 0.052200799910399866 4.341387885360763e-05
+  hidden angularVelocity_0 -0.009936090749599872 0.019152179214926245 -0.005219849622984181
+  hidden translation_1 -0.0062 -0.1359 -0.014
+  hidden rotation_1 0 -1 0 0.6156402525870563
+  hidden linearVelocity_1 0.24297120616598403 0.05214325768327616 -7.810601827662178e-05
+  hidden angularVelocity_1 -1.695052210111335 7.839661797625764 -0.0012160297953718562
+  hidden translation_2 -0.0062 0.1359 -0.014
+  hidden rotation_2 0 1 0 3.2671914474901613
+  hidden linearVelocity_2 0.24298508114770964 0.05245120644118074 -8.249679525367172e-05
+  hidden angularVelocity_2 -1.6908805045249609 7.84055227980115 0.00851068056104372
+  hidden translation_6 4.7694809944154315e-05 1.272412623443131e-05 -1.970453055569199e-06
+  hidden rotation_6 -0.8442481923747606 0.3789750861094416 0.3789760860269296 -1.7393139997533469
+  hidden linearVelocity_6 0.24187082166435478 0.052792722486543875 0.0025481843883665652
+  hidden angularVelocity_6 -0.009936090088930016 0.01915218084862605 -0.005219854912682034
+  hidden translation_7 4.600869751048009e-05 -1.456693908075124e-05 -3.735104671998002e-06
+  hidden rotation_7 0.3025419869233978 -0.6739659704088771 -0.673971970395849 2.554028999647181
+  hidden linearVelocity_7 0.24278800874536566 0.05277349790617286 0.0015813848072393686
+  hidden angularVelocity_7 -0.009936092100593739 0.01915218059627876 -0.0052198544693579495
+  translation 2.422951075760968 5.12660521677344 0.04406769291222317
+  rotation 4.164710734876368e-05 0.00043465558334311545 -0.9999999046700165 2.929313368252458
+}
+SwingCouch {
+  translation 4.12 -1.09323e-05 0
+  rotation 0 0 1 3.14159
+}
