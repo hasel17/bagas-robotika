@@ -1,0 +1,9 @@
+Terminal 1
+$ git clone https://github.com/KaleabTessera/PRM-Path-Planning.git
+$ cd PRM-Path-Planning/
+$ pip install -r requirements.txt
+$ pip install numpy --upgrade
+$ pip install -U scikit-learn scipy matplotlib
+$ python main.py
+$ python main.py --numSamples 1000
+$ python main.py --numSamples 5000

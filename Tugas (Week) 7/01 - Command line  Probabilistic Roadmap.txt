@@ -1,0 +1,15 @@
+Terminal 1
+$ git clone https://github.com/nishadg246/Probabilistic-Roadmap.git
+$ cd Probabilistic-Roadmap
+$ catkin_make
+$ source devel/setup.bash
+# rosrun rrt-planning prm
+
+Terminal 2
+$ roscore
+
+Terminal 3
+$ rviz
+
+Terminal 4
+$ rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map base_link 10
