@@ -1,0 +1,8 @@
+prefix=/home/nazrin/rns/devel
+
+Name: differential_drive_robot_description
+Description: Description of differential_drive_robot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

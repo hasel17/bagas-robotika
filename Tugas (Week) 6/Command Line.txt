@@ -1,0 +1,12 @@
+Terminal 1
+$ git clone https://github.com/pratik7229/ROS-Projects.git
+$ cd ROS-Projects/ros\ navigation\ stack/
+$ cp differential_drive_robot_description /home/nazrin/rns
+$ cp navigation /home/nazrin/rns
+$ cd /home/nazrin/rns
+$ catkin_make
+$ source devel/setup.bash
+$ roslaunch differential_drive_robot_description gazebo.launch
+
+$ source devel/setup.bash
+$ roslaunch navigation navigation.launch

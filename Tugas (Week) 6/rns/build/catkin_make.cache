@@ -1,0 +1,2 @@
+differential_drive_robot_description:navigation
+-DCATKIN_DEVEL_PREFIX=/home/nazrin/rns/devel -DCMAKE_INSTALL_PREFIX=/home/nazrin/rns/install -G Unix Makefiles
