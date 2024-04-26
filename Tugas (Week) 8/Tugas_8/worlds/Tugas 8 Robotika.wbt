@@ -1,0 +1,166 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.04566089928673822 0.28091968812762763 0.9586444654294952 0.4872432825289314
+  position -2.316601328546534 -1.1413330640771702 0.8727554154786593
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+SolidBox {
+  translation 0 0 0.11
+  size 0.2 0.2 0.2
+}
+Robot {
+  translation -2.415731258009332e-05 -0.46029924456438875 0.0066325730105953745
+  rotation 0.9999999433628776 -0.00023358292033595334 -0.00024230819450951862 1.4786611713997537
+  children [
+    Lidar {
+      translation 0.00552821 0.0780306 0.0507425
+      rotation 0.6012138734514069 0.5914908754979858 -0.5372898869066696 2.15391
+      numberOfLayers 1
+    }
+    DEF BodyShapeWithTransform Pose {
+      translation 0 0.0415 0
+      children [
+        DEF Body Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.08
+            radius 0.045
+          }
+        }
+      ]
+    }
+    DEF wheel_joint HingeJoint {
+      jointParameters HingeJointParameters {
+        position 38.624607563620195
+        anchor -0.045 0.025 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_1"
+        }
+      ]
+      endPoint Solid {
+        translation -0.0450079 0.018985635763512955 -0.007989206645945851
+        rotation 0.6884262854052614 0.22998100701762936 0.6878793396913957 2.6891486236166644
+        children [
+          DEF shape_wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.025
+            }
+          }
+        ]
+        boundingObject USE shape_wheel
+        physics DEF wheel_physics Physics {
+        }
+      }
+    }
+    DEF wheel_joint HingeJoint {
+      jointParameters HingeJointParameters {
+        position 38.62460870444494
+        anchor 0.045 0.025 0
+      }
+      device [
+        RotationalMotor {
+          name "motor_2"
+        }
+      ]
+      endPoint Solid {
+        translation 0.044992 0.01898562247626427 -0.007989196643091383
+        rotation -0.3024692356894247 -0.903974772418121 0.30222834462217796 1.6707865430026823
+        children [
+          DEF shape_wheel Shape {
+            appearance PBRAppearance {
+              baseColor 0 0 1
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.025
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE shape_wheel
+        physics USE wheel_physics
+      }
+    }
+    DEF eye_solid Solid {
+      translation 0.015 0.07 0.045
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "eye_left"
+    }
+    DEF eye_solid Solid {
+      translation -0.015 0.07 0.045
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "eye_right"
+    }
+    DEF eye_solid Solid {
+      translation 0 0.03 0.045
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 1
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.005 0.005 0.005
+          }
+        }
+      ]
+      name "eye_right(1)"
+    }
+  ]
+  boundingObject USE BodyShapeWithTransform
+  physics Physics {
+    density -1
+    mass 1
+  }
+  controller "my_controller_lidar"
+}
