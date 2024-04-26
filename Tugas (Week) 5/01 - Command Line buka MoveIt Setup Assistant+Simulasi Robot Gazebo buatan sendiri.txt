@@ -1,0 +1,8 @@
+Terminal 1
+$ roslaunch moveit_setup_assistant setup_assistant.launch
+
+Terminal 2
+$ roslaunch gazebo_ros empty_world.launch paused:=true use_sim_time:=false gui:=true throttled:=false recording:=false debug:=true
+
+Terminal 3
+$ rosrun gazebo_ros spawn_modef -file /home/nazrin/nazrinbot.urdf -urdf -x 0 -y 0 -z 1 -model panda 

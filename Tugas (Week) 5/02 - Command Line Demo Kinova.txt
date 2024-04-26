@@ -1,0 +1,29 @@
+Terminal 1
+
+Ekstrak hasil file download di deskripsi video tersebut ke /home/user/kinova
+$ cd /home/nazrin/kinova
+$ catkin_make
+$ souce devel/setup.bash
+$ mkdir -p src/kinova_moveit
+$ roslaunch moveit_setup_assistant setup_assistant.launch
+$ cd src/kinova_moveit
+$ gedit config/ros_controllers.yaml
+$ gedit config/joint_limits.yaml
+$ gedit launch/gazebo.launch
+$ cd /home/nazrin/kinova
+$ mv models /home/nazrin/.gazebo/
+$ catkin_make
+$ roslaunch kinova_moveit demo_gazebo.launch
+
+Terminal 2
+$ source kinova/devel/setup.bash
+$ rosrun aruco_recognition aruco_pose_estimation.py
+
+Terminal 3
+$ source kinova/devel/setup.bash
+$ cd kinova/UI
+$ pyhton3 controller.py
+
+
+
+
