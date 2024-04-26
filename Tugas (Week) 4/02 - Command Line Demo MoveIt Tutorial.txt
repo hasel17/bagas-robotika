@@ -1,0 +1,14 @@
+Terminal 1
+$ git clone https://github.com/ichbindunst/moveit_tutorial.git
+$ cd moveit_tutorial
+$ source moveit_tutorial/devel/setup.bash
+$ roslaunch probot_anno_moveit_config demo.launch
+
+Terminal 2
+$ setup ~/moveit_tutorial/devel/setup.bash
+$ rosrun probot_examples random
+$ rosrun probot_examples direct_kinematic
+$ rosrun probot_examples inverse_kinematic
+$ rosrun probot_examples cartesian_move
+$ rosrun probot_examples run_circle
+$ rosrun probot_examples speed_control

@@ -1,0 +1,8 @@
+prefix=/home/nazrin/turtlebot_nav/devel
+
+Name: controller
+Description: Description of controller
+Version: 0.0.1
+Cflags: -I/home/nazrin/turtlebot_nav/src/turtle-nav-stack/controller/include
+Libs: -L${prefix}/lib -lcontroller
+Requires: roscpp

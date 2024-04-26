@@ -1,0 +1,8 @@
+Terminal 1
+$ ros2 launch webots_ros2_epuck robot_launch.py rviz:=true slam:=true
+
+Terminal 2
+$ ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+Terminal 3
+$ rqt_graph

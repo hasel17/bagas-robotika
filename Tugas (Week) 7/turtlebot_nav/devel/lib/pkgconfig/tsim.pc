@@ -1,0 +1,8 @@
+prefix=/home/nazrin/turtlebot_nav/devel
+
+Name: tsim
+Description: Description of tsim
+Version: 0.0.1
+Cflags: -I/home/nazrin/turtlebot_nav/devel/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_runtime roscpp std_msgs std_srvs

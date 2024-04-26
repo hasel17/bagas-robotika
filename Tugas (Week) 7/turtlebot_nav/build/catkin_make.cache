@@ -1,0 +1,2 @@
+nuturtlebot:turtle-nav-stack/bmapping:turtle-nav-stack/controller:turtle-nav-stack/nuslam:turtle-nav-stack/nuturtle_description:turtle-nav-stack/nuturtle_gazebo:turtle-nav-stack/nuturtle_robot:turtle-nav-stack/planner:turtle-nav-stack/rigid2d:turtle-nav-stack/tsim
+-DCATKIN_DEVEL_PREFIX=/home/nazrin/turtlebot_nav/devel -DCMAKE_INSTALL_PREFIX=/home/nazrin/turtlebot_nav/install -G Unix Makefiles
